@@ -20,6 +20,10 @@ with open(csvpath, newline='') as csvfile:
         profit_and_loss_column = (row[1])
         print(date_column+' '+profit_and_loss_column)
         #print(profit_and_loss_column)
+        net_total_pl += int(profit_and_loss_column)
+    
+    print(f'Net total profit and loss is : {net_total_pl}')
+
 
     def finding_sum() :
         profit_and_loss_total = 0
